@@ -10,7 +10,7 @@ run: build/logo_compressed.prg
 run_uncompressed: build/logo.prg
 	cd build/ && x64 logo.prg
 
-all: logo_compressed.prg run
+all: run
 
 clean:
 	rm -f build/*
