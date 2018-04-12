@@ -36,6 +36,7 @@
 
 !source "code/data_static_text.asm"
 !source "code/data_colorwash.asm"
+!source "code/data_bitmap.asm"
 
 ;============================================================
 ; one-time initialization routines
@@ -43,6 +44,7 @@
 
 !source "code/init_clear_screen.asm"
 !source "code/init_static_text.asm"
+!source "code/init_logo.asm"
 
 ;============================================================
 ;    subroutines called during custom IRQ
