@@ -169,3 +169,15 @@ couldn't be debugged fully in time so it was never documented).
 19 for x = 0 to 200: next: poke s+24,0
 20 for x = 0 to 100: next: goto 10
 
+# Graphics Chip
+
+## Memory Map
+
+  - 0xD020 is the frame color
+  - 0xD021 is the background color
+  - 0x0286 (646) is the "current" text color
+  - 0x0400 (1024) is the beginning of Screen RAM
+  - 0xD800 (55296) is the beginning of Color RAM
+  - Characters in the 128-255 range are 'reversed' versions of the ones
+    in the 0-127 range. So 32 is a space and 128+32 is the foreground
+    color
